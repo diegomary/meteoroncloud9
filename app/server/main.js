@@ -1,10 +1,14 @@
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
+import {_} from 'meteor/underscore';
+
+
 var MajorArcana = new Mongo.Collection("MajorArcana");
 
 Meteor.startup(() => {
-
-    console.log(MajorArcana.find().fetch())
     
-  // code to run on server at startup
+    var objs = MajorArcana.find().fetch();
+    if(!_.isUndefined(objs)) console.log(MajorArcana.find().fetch());
+    
+
 });
