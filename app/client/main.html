@@ -10,8 +10,29 @@
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+  <button>Flowers</button>
+ 
+  <table>
+    <th>Flower Name</th>
+    {{#each flowers}}
+    <tr>
+      <td>{{this.Name}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  
+  
+    <table>
+    <th>Flower Name</th>
+    {{#each flowers1}}
+    <tr>
+      <td>{{this.Name}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  
+  
+  
 </template>
 
 <template name="info">
