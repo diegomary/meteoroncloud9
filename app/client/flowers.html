@@ -1,0 +1,18 @@
+<template name="flowers">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <button class="js-getflowers">Flowers</button>
+        {{#each flowers}}
+        <p>{{this.Name}}</p>
+        {{/each}}
+      </div>
+      <div class="col-md-6">
+        <span>Loading flowers...</span>
+        {{#each flowers1}}
+        <p>{{this.Name}}</p>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>

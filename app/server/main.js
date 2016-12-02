@@ -7,8 +7,8 @@ var MajorArcana = new Mongo.Collection("MajorArcana");
 
 Meteor.startup(() => {
     
-    var objs = MajorArcana.find().fetch();
-    if(!_.isUndefined(objs)) console.log(MajorArcana.find().fetch());
+    //var objs = MajorArcana.find().fetch();
+    //if(!_.isUndefined(objs)) console.log(MajorArcana.find().fetch());
     
 
 });
